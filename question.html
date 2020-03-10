@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/tutor.css">
+    <style>
+       input:invalid {
+         border: 2px dashed red;
+       }
+
+       input:valid {
+         border: 2px solid black;
+       }
+       textarea:invalid {
+         border: 2px dashed red;
+       }
+
+       textarea:valid {
+         border: 2px solid black;
+       }
+       </style>
+    <title>Web Portfolio: Online Shopping</title>
+
+  </head>
+  <body>
+    <h1>
+    <img src="image/orchid.png" height="50" width="50">Online Shopping</h1>
+    <table>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+        <a href="https://www.instagram.com/katscarf.my/?hl=en">Instagram</a>
+      <a href="#">Question</a>
+    </nav>
+    <p> How can we help you?</p>
+
+    <div class="container">
+    <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." maxlength="10" minlength="3" required><br/><br/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."maxlength="4" minlength="3" required><br/><br/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Topic">Topic</label>
+      </div>
+      <div class="col-75">
+        <select id="Topic" name="Topic" required>
+          <option value="Topic1">Topic1</option>
+          <option value="Topic2">Topic2</option>
+          <option value="Topic3">Topic3</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Question:</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Email" name="Email" placeholder="Your email.." required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="phone">Phone Number</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="phone" name="phone" placeholder="Your phone number.." required>
+      </div>
+    </div>
+    <div class="row">
+      <button type="submit" value="Submit">Submit</button>
+
+      <button type="reset" value="Reset">Reset</button>
+    </div>
+
+    </form>
+  </div>
+  </body>
+</html>
